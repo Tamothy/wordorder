@@ -1,9 +1,20 @@
 var leapYear = function(year) {
- return false;
+  if (year % 4 === 0) {
+    return true;
+  } else {
+    return false;
+  }
  };
 
-
-
+ // if (year%4 === 0) {
+ //   return true;
+ // } else if (year%100 === 0) {
+ //   return false;
+ // } else if (year%400 === 0) {
+ //   return true;
+ // } else {
+ //   return false;
+ // }
 
 $(document).ready(function() {
   $("form#leap-year").submit(function(event) {
